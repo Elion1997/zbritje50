@@ -4,8 +4,6 @@ const deals = [
     title: "Sony WH-1000XM4 Wireless Headphones",
     currentPrice: "€249.99",
     originalPrice: "€379.99",
-    description:
-      "Premium noise cancelling headphones with exceptional sound quality. Free shipping available.",
     merchant: "Amazon",
     posted: "2 hours ago",
     votes: 127,
@@ -18,8 +16,6 @@ const deals = [
     title: 'Samsung 4K Smart TV 55"',
     currentPrice: "€599.99",
     originalPrice: "€899.99",
-    description:
-      "Latest model with QLED technology. In-store pickup available.",
     merchant: "MediaMarkt",
     posted: "5 hours ago",
     votes: 89,
@@ -32,8 +28,6 @@ const deals = [
     title: "Apple AirPods Pro (2nd Generation)",
     currentPrice: "€229.99",
     originalPrice: "€279.99",
-    description:
-      "Active noise cancellation for immersive sound. 24-hour battery life with charging case.",
     merchant: "Apple Store",
     posted: "1 hour ago",
     votes: 156,
@@ -46,8 +40,6 @@ const deals = [
     title: "Sony WH-1000XM4 Wireless Headphones",
     currentPrice: "€249.99",
     originalPrice: "€379.99",
-    description:
-      "Premium noise cancelling headphones with exceptional sound quality. Free shipping available.",
     merchant: "Amazon",
     posted: "2 hours ago",
     votes: 127,
@@ -60,8 +52,6 @@ const deals = [
     title: 'Samsung 4K Smart TV 55"',
     currentPrice: "€599.99",
     originalPrice: "€899.99",
-    description:
-      "Latest model with QLED technology. In-store pickup available.",
     merchant: "MediaMarkt",
     posted: "5 hours ago",
     votes: 89,
@@ -74,8 +64,6 @@ const deals = [
     title: "Apple AirPods Pro (2nd Generation)",
     currentPrice: "€229.99",
     originalPrice: "€279.99",
-    description:
-      "Active noise cancellation for immersive sound. 24-hour battery life with charging case.",
     merchant: "Apple Store",
     posted: "1 hour ago",
     votes: 156,
@@ -88,8 +76,6 @@ const deals = [
     title: "Sony WH-1000XM4 Wireless Headphones",
     currentPrice: "€249.99",
     originalPrice: "€379.99",
-    description:
-      "Premium noise cancelling headphones with exceptional sound quality. Free shipping available.",
     merchant: "Amazon",
     posted: "2 hours ago",
     votes: 127,
@@ -102,8 +88,6 @@ const deals = [
     title: 'Samsung 4K Smart TV 55"',
     currentPrice: "€599.99",
     originalPrice: "€899.99",
-    description:
-      "Latest model with QLED technology. In-store pickup available.",
     merchant: "MediaMarkt",
     posted: "5 hours ago",
     votes: 89,
@@ -116,8 +100,6 @@ const deals = [
     title: "Apple AirPods Pro (2nd Generation)",
     currentPrice: "€229.99",
     originalPrice: "€279.99",
-    description:
-      "Active noise cancellation for immersive sound. 24-hour battery life with charging case.",
     merchant: "Apple Store",
     posted: "1 hour ago",
     votes: 156,
@@ -144,7 +126,6 @@ function createDealCard(deal) {
                         <span class="discount-badge">${deal.discount}</span>
                     </div>
                 </div>
-                <p class="deal-description">${deal.description}</p>
                 <div class="deal-footer">
                     <div class="vote-section">
                         <button class="vote-button" onclick="handleVote(${deal.id})">👍</button>
