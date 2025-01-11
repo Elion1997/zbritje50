@@ -15,10 +15,10 @@ body {
 .header {
     background: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 1rem;
     position: sticky;
     top: 0;
     z-index: 100;
+    margin: 0 auto;
 }
 
 .nav-container {
@@ -27,32 +27,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 
 .logo {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #2196f3;
-    text-decoration: none;
+    width: 300px;
+    height: 100px;
+}
+
+.logo-link {
     margin: 0 auto;
-}
-
-.nav-links {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #666;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #2196f3;
+    height: 100px;
 }
 
 .container {
@@ -171,7 +156,7 @@ body {
 }
 
 .discount-badge {
-    background: #ff5722;
+    background: #159d31;
     color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
@@ -202,10 +187,6 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(33, 150, 243, 0.4);
     transition: transform 0.3s;
-}
-
-.add-deal-button:hover {
-    transform: scale(1.1);
 }
 
 /*Media Queries*/
