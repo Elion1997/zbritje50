@@ -7,6 +7,7 @@ const deals = [
     merchant: "Amazon",
     discount: "-34%",
     image: "https://via.placeholder.com/300x200",
+    link : "https://www.google.com"
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const deals = [
     merchant: "MediaMarkt",
     discount: "-33%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const deals = [
     merchant: "Apple Store",
     discount: "-18%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ const deals = [
     merchant: "MediaMarkt",
     discount: "-14%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const deals = [
     merchant: "Saturn",
     discount: "-31%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ const deals = [
     merchant: "Amazon",
     discount: "-15%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 7,
@@ -61,6 +67,7 @@ const deals = [
     merchant: "Expert",
     discount: "-40%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 8,
@@ -70,6 +77,7 @@ const deals = [
     merchant: "Samsung Store",
     discount: "-21%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 9,
@@ -79,6 +87,7 @@ const deals = [
     merchant: "MediaMarkt",
     discount: "-28%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 10,
@@ -88,6 +97,7 @@ const deals = [
     merchant: "Apple Store",
     discount: "-12%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 11,
@@ -97,6 +107,7 @@ const deals = [
     merchant: "Saturn",
     discount: "-27%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 12,
@@ -106,6 +117,7 @@ const deals = [
     merchant: "Dell Store",
     discount: "-17%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 13,
@@ -115,6 +127,7 @@ const deals = [
     merchant: "MediaMarkt",
     discount: "-18%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 14,
@@ -124,6 +137,7 @@ const deals = [
     merchant: "GameStop",
     discount: "-11%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 15,
@@ -133,6 +147,7 @@ const deals = [
     merchant: "Camera Store",
     discount: "-15%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 16,
@@ -142,6 +157,7 @@ const deals = [
     merchant: "Microsoft Store",
     discount: "-23%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 17,
@@ -151,6 +167,7 @@ const deals = [
     merchant: "Samsung Store",
     discount: "-27%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 18,
@@ -160,6 +177,7 @@ const deals = [
     merchant: "Expert",
     discount: "-20%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 19,
@@ -169,6 +187,7 @@ const deals = [
     merchant: "Amazon",
     discount: "-18%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 20,
@@ -178,6 +197,7 @@ const deals = [
     merchant: "MediaMarkt",
     discount: "-17%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 21,
@@ -187,6 +207,7 @@ const deals = [
     merchant: "Saturn",
     discount: "-16%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 22,
@@ -196,6 +217,7 @@ const deals = [
     merchant: "Amazon",
     discount: "-17%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 23,
@@ -205,6 +227,7 @@ const deals = [
     merchant: "Samsung Store",
     discount: "-25%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 24,
@@ -214,6 +237,7 @@ const deals = [
     merchant: "Camera Store",
     discount: "-13%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 25,
@@ -223,6 +247,7 @@ const deals = [
     merchant: "MediaMarkt",
     discount: "-31%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 26,
@@ -232,6 +257,7 @@ const deals = [
     merchant: "Expert",
     discount: "-22%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 27,
@@ -241,6 +267,7 @@ const deals = [
     merchant: "Apple Store",
     discount: "-17%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 28,
@@ -250,6 +277,7 @@ const deals = [
     merchant: "Amazon",
     discount: "-17%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 29,
@@ -259,6 +287,7 @@ const deals = [
     merchant: "Saturn",
     discount: "-17%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 30,
@@ -268,6 +297,7 @@ const deals = [
     merchant: "MediaMarkt",
     discount: "-20%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 31,
@@ -277,6 +307,7 @@ const deals = [
     merchant: "Amazon",
     discount: "-24%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 32,
@@ -286,6 +317,7 @@ const deals = [
     merchant: "OnePlus Store",
     discount: "-11%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 33,
@@ -295,6 +327,7 @@ const deals = [
     merchant: "MediaMarkt",
     discount: "-15%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 34,
@@ -304,6 +337,7 @@ const deals = [
     merchant: "Expert",
     discount: "-25%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 35,
@@ -313,6 +347,7 @@ const deals = [
     merchant: "Saturn",
     discount: "-20%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 36,
@@ -322,6 +357,7 @@ const deals = [
     merchant: "MediaMarkt",
     discount: "-20%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 37,
@@ -331,6 +367,7 @@ const deals = [
     merchant: "Amazon",
     discount: "-13%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 38,
@@ -340,6 +377,7 @@ const deals = [
     merchant: "ASUS Store",
     discount: "-20%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 39,
@@ -349,6 +387,7 @@ const deals = [
     merchant: "Amazon",
     discount: "-20%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 40,
@@ -358,6 +397,7 @@ const deals = [
     merchant: "MediaMarkt",
     discount: "-20%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 41,
@@ -367,6 +407,7 @@ const deals = [
     merchant: "Saturn",
     discount: "-10%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 42,
@@ -376,6 +417,7 @@ const deals = [
     merchant: "Camera Store",
     discount: "-15%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 43,
@@ -385,6 +427,7 @@ const deals = [
     merchant: "Apple Store",
     discount: "-25%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 44,
@@ -394,6 +437,7 @@ const deals = [
     merchant: "Amazon",
     discount: "-20%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 45,
@@ -403,6 +447,7 @@ const deals = [
     merchant: "Steam Store",
     discount: "-14%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 46,
@@ -412,6 +457,7 @@ const deals = [
     merchant: "Expert",
     discount: "-10%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 47,
@@ -421,6 +467,7 @@ const deals = [
     merchant: "MediaMarkt",
     discount: "-13%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 48,
@@ -430,6 +477,7 @@ const deals = [
     merchant: "Expert",
     discount: "-17%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 49,
@@ -439,6 +487,7 @@ const deals = [
     merchant: "Samsung Store",
     discount: "-19%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
   {
     id: 50,
@@ -448,6 +497,7 @@ const deals = [
     merchant: "MediaMarkt",
     discount: "-21%",
     image: "https://via.placeholder.com/300x200",
+    link: "https://www.google.com",
   },
 ];
 
@@ -456,12 +506,16 @@ function createDealCard(deal) {
   return `
         <div class="deal-card">
             <div class="deal-image">
-                <img src="${deal.image}" alt="${deal.title}">
+                <a href="${deal.link}" target="blank">
+                  <img src="${deal.image}" alt="${deal.title}">
+                </a>
                 <div class="deal-merchant">${deal.merchant}</div>
             </div>
             <div class="deal-content">
                 <div class="deal-header">
-                    <h2 class="deal-title">${deal.title}</h2>
+                <a href="${deal.link}" target="blank">
+                  <h2 class="deal-title">${deal.title}</h2>
+                </a>
                     <div class="price-container">
                         <span class="current-price">${deal.currentPrice}</span>
                         <span class="original-price">${deal.originalPrice}</span>
