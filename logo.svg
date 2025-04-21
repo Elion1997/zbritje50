@@ -1,0 +1,9 @@
+<svg viewBox="0 0 240 70" xmlns="http://www.w3.org/2000/svg">
+  <!-- Red background rectangle -->
+  <rect width="240" height="70" fill="#ff0000"/>
+  
+  <!-- White text "Zbritje - 50" -->
+  <text x="120" y="45" font-family="Arial" font-size="40" font-weight="bold" text-anchor="middle" fill="#ffffff">
+  ZBRITJE 50
+  </text>
+</svg>

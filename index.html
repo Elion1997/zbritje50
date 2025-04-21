@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deals Website</title>
+    <title>Zbritje 50</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,19 +11,34 @@
     <header class="header">
         <nav class="nav-container">
             <a href="#" class="logo-link">
-                <img class="logo" src="images/logo.jpeg" alt="logo billig50">
+                <img class="logo" src="images/light-mode-logo.svg" alt="logo zbritje50">
             </a>
+            <button id="theme-toggle">
+        </button>
+
         </nav>
     </header>
-
+    <div class="search-container">
+        <div class="searchbox">
+            <input type="text" placeholder="Kërko produktet">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+    </div>
     <main class="container">
+        <div class="filter-container">
+            <button class="filter-btn all-items">Të gjitha</button>
+            <button class="filter-btn electronic-devices">Paisje elektronike</button>
+            <button class="filter-btn clothes">Veshmbathje</button>
+            <button class="filter-btn footwear">Këpucë</button>
+            <button class="filter-btn furniture">Mobilje</button>
+            <button class="filter-btn other">Të tjera</button>
+        </div>
         <div class="deals-grid" id="dealsContainer">
             <!-- Deals will be inserted here by JavaScript -->
         </div>
     </main>
 
-    <!-- <button class="add-deal-button" onclick="showAddDealForm()">+</button> -->
-
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c815d48bf5.js" crossorigin="anonymous"></script>
 </body>
 </html>
