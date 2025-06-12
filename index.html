@@ -1,44 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zbritje 50</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header class="header">
-        <nav class="nav-container">
-            <a href="#" class="logo-link">
-                <img class="logo" src="images/light-mode-logo.svg" alt="logo zbritje50">
-            </a>
-            <button id="theme-toggle">
-        </button>
 
-        </nav>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zbritje50</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Inter:wght@400;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-container">
+        <a href="#" class="logo-link">
+          <img
+            src="images/light-mode-logo.svg"
+            alt="Zbritje50 Logo"
+            class="logo"
+          />
+        </a>
+        <button id="theme-toggle"></button>
+      </nav>
     </header>
+
     <div class="search-container">
-        <div class="searchbox">
-            <input type="text" placeholder="Kërko produktet">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-        </div>
+      <div class="searchbox">
+        <input type="text" placeholder="Search for deals..." />
+        <i class="fas fa-search search-icon"></i>
+      </div>
     </div>
-    <main class="container">
-        <div class="filter-container">
-            <button class="filter-btn all-items">Të gjitha</button>
-            <button class="filter-btn electronic-devices">Paisje elektronike</button>
-            <button class="filter-btn clothes">Veshmbathje</button>
-            <button class="filter-btn footwear">Këpucë</button>
-            <button class="filter-btn furniture">Mobilje</button>
-            <button class="filter-btn other">Të tjera</button>
+
+    <div class="container">
+      <div class="filter-container" id="filterContainer">
+        <div class="filter-toggle">
+          <i class="fas fa-filter filter-icon" id="filterIcon"></i>
+          <i class="fas fa-times close-icon" id="closeIcon"></i>
         </div>
-        <div class="deals-grid" id="dealsContainer">
-            <!-- Deals will be inserted here by JavaScript -->
+        <div class="filter-buttons">
+          <button class="filter-btn all-items active">Të gjitha</button>
+          <button class="filter-btn electronic-devices">
+            Paisje elektronike
+          </button>
+          <button class="filter-btn clothes">Veshmbathje</button>
+          <button class="filter-btn footwear">Këpucë</button>
+          <button class="filter-btn furniture">Artikuj shtëpiak</button>
+          <button class="filter-btn other">Artikuj të ndryshëm</button>
         </div>
-    </main>
+      </div>
+
+      <div class="deals-grid" id="dealsContainer"></div>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>
+  Promocion
+</h3>
+<p>
+  Përdor kodin: <strong>Zbritje50</strong> në faqet e partnerëve tanë dhe merr deri në <strong>20% zbritje ekstra</strong> në blerjet e tua!
+</p>
+
+
+          </div>
+          <div class="footer-section">
+            <h3>Kategoritë</h3>
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  class="footer-link"
+                  data-category="electronic-devices"
+                  >Paisje Elektronike</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link" data-category="clothes"
+                  >Veshmbathje</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link" data-category="footwear"
+                  >Këpucë</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link" data-category="furniture"
+                  >Artikuj shtëpiak</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Partnerët tanë</h3>
+            <ul>
+              <li>
+  <a href="https://gjirafa50.com/" class="footer-link help-link" data-action="faq">
+    Gjirafa50
+  </a>
+</li>
+
+              <li>
+  <a href="https://www.foleja.com/" class="footer-link help-link" data-action="contact">
+    Foleja
+  </a>
+</li>
+
+              <li>
+                <a href="#" class="footer-link help-link" data-action="privacy"
+                  >Dardania Sport</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Lokacioni</h3>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/elionhalili" class="social-link" data-social="facebook" target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-facebook-f"></i>
+</a>
+
+              <a href="#" class="social-link" data-social="instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link" data-social="twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.4729646201566!2d21.463611176297!3d42.46072757917213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1353b9e8e0b2d1c5%3A0x6c2e8b4f5b5a7e2d!2sGjilan%2C%20Kosovo!5e0!3m2!1sen!2sus!4v1623456789!5m2!1sen!2sus"
+              width="100%"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+          <div class="footer-section">
+            <h3>Aplikacioni Mobil</h3>
+            <p>Shkarko aplikacionin e Zbritje50 nga:</p>
+            <a href="#" class="app-store-link"
+              ><i class="fab fa-apple"></i> App Store</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Zbritje50. Të gjitha të drejtat e rezervuara.</p>
+        </div>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/c815d48bf5.js" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
