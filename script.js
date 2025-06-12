@@ -688,6 +688,37 @@ document
     if (event.key === "Enter") {
       searchDeals();
     }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("theme-toggle");
+  const logoImg = document.querySelector(".logo");
+  const footerLogo = document.getElementById("footer-logo");
+
+  // Ikona fillestare e dark mode
+  toggleButton.innerHTML = '<i class="fa-solid fa-moon fa-2xl theme-icon"></i>';
+
+  toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    const isDark = document.body.classList.contains("dark-mode");
+
+    // Ndrysho ikonën dhe logon për dark/light mode
+    toggleButton.innerHTML = isDark
+      ? '<i class="fa-solid fa-sun fa-2xl theme-icon" style="color: #fff;"></i>'
+      : '<i class="fa-solid fa-moon fa-2xl theme-icon"></i>';
+
+    logoImg.src = isDark
+      ? "images/dark-mode-logo.svg"
+      : "images/light-mode-logo.svg";
+
+    footerLogo.src = logoImg.src;
+  });
+});
+
+
+
+
+
   });
 
 
