@@ -754,6 +754,48 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!filterContainer.contains(e.target) && window.innerWidth <= 700) {
       filterButtons.classList.remove("visible");
     }
+    // Footer Interactivity
+document.addEventListener("DOMContentLoaded", () => {
+  const categoryLinks = document.querySelectorAll(
+    ".footer-link[data-category]"
+  );
+  categoryLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const category = link.getAttribute("data-category");
+      renderFilteredDeals(category);
+
+      for (const key in filterBtns) {
+        filterBtns[key].classList.remove("active");
+      }
+      document.querySelector(`.filter-btn.${category}`).classList.add("active");
+    });
+  });
+});
+
+// Filter Container Toggle
+document.addEventListener("DOMContentLoaded", () => {
+  const filterContainer = document.getElementById("filterContainer");
+  const filterIcon = document.getElementById("filterIcon");
+  const closeIcon = document.getElementById("closeIcon");
+  const filterButtons = document.querySelector(".filter-buttons");
+
+  // Toggle filter container
+  filterIcon.addEventListener("click", () => {
+    filterButtons.classList.add("visible");
+  });
+
+  closeIcon.addEventListener("click", () => {
+    filterButtons.classList.remove("visible");
+  });
+
+  // Close filter container when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!filterContainer.contains(e.target) && window.innerWidth <= 700) {
+      filterButtons.classList.remove("visible");
+    }
+  });
+});
   });
 });
 
