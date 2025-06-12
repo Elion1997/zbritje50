@@ -10,6 +10,7 @@
     --header-bg: #ffffff;
     --box-shadow: rgba(0, 0, 0, 0.1);
     --border-color: #e0e0e0;
+    --filter-bg: #d0e7f5;
 }
 
 .dark-mode {
@@ -24,6 +25,7 @@
     --header-bg: #333333;         
     --box-shadow: rgba(0, 0, 0, 0.3); 
     --border-color: #3a3a3a; 
+    --filter-bg: #1f2c38;
 }
 
 * {
@@ -89,7 +91,7 @@ a {
     height: 100px;
 }
 
-/*search container input */
+/* Search container input */
 .search-container {
     display: flex;
     justify-content: center;
@@ -132,11 +134,40 @@ input[type="text"] {
     padding: 0 1rem;
 }
 
+/* Filter Container */
 .filter-container {
+    position: sticky;
+    top: 150px;
+    z-index: 50;
+    background: var(--filter-bg);
     padding: 1rem;
+    border-top: 2px solid var(--border-color); /* Match other borders */
+    border-bottom: 2px solid var(--border-color); /* Match other borders */
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+}
+
+.filter-toggle {
+    display: none;
+    align-items: center;
+    gap: 1rem;
+}
+
+.filter-icon, .close-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.filter-icon:hover, .close-icon:hover {
+    color: var(--accent-color);
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .filter-btn {
@@ -221,7 +252,7 @@ input[type="text"] {
     font-family: 'Inter', sans-serif;
     font-size: 1.25rem;
     font-weight: 600;
-   color: var(--accent-color);
+    color: var(--accent-color);
     margin-bottom: 0.5rem;
     display: -webkit-box;
     line-clamp: 2;
@@ -292,8 +323,106 @@ input[type="text"] {
     border-top: 1px solid #eee;
 }
 
-/*Media Queries*/
+/* Footer Styling */
+.footer {
+    background: var(--bg-color);
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1.5rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-link {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--accent-color);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-link {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--accent-color);
+}
+
+.app-store-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.app-store-link:hover {
+    background: var(--accent-color);
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 1rem;
+}
+
+.footer-bottom p {
+    font-size: 0.875rem;
+    color: var(--text-color);
+}
+
+/* Media Queries */
 @media (max-width: 700px) {
     html {
         font-size: 14px;
@@ -342,5 +471,52 @@ input[type="text"] {
 
     .original-price {
         font-size: .75rem;
+    }
+
+    .filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+    }
+
+    .filter-toggle {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .filter-buttons.visible {
+        display: flex;
+        align-items: flex-start; /* Align buttons to the left */
+    }
+
+    .filter-btn {
+        width: auto; /* Let buttons take their natural width */
+        margin: 0.5rem 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-section {
+        min-width: 100%;
+    }
+}
+
+@media (min-width: 701px) {
+    .filter-toggle {
+        display: none;
+    }
+
+    .filter-buttons {
+        display: flex;
     }
 }
